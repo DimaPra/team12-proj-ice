@@ -6,6 +6,10 @@ body {
 
 body {
     background-color: #E5E5E5;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
 }
 
 h2,
@@ -25,7 +29,10 @@ ol {
 }
 
 img {
+    margin: 0;
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 a{
@@ -33,4 +40,6 @@ a{
 }
 li{
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
