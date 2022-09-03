@@ -1,4 +1,7 @@
 // hero
+.hero {
+  background-color: var(--bg-main-color);
+}
 .conteiner--hero {
   display: flex;
   overflow: hidden;
@@ -181,7 +184,7 @@
   display: flex;
   align-items: center;
   
-
+  margin-top: 15px;
   margin-left: 33px;
   max-width: 155px;
   font-weight: 400;
@@ -270,7 +273,7 @@ line-height: 1.21;
   position: absolute;
   bottom: 0;
   right: 0;
-  max-height: 670px;
+  max-height: 705px;
   overflow: hidden;
   pointer-events: auto;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
