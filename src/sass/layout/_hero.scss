@@ -1,0 +1,297 @@
+// hero
+.conteiner--hero {
+  display: flex;
+  overflow: hidden;
+  justify-content: space-between;
+  position: relative;
+  background: url(../images/mobile/frame.png) var(--bg-main-color);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+
+  padding-bottom: 240px;
+  @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+    background: url(../images/mobile/frame@2x.png) var(--bg-main-color);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    
+  }
+  @media screen and (min-width: 768px) {
+    padding-bottom: 13px;
+    background: url(../images/tablet/frame.png) var(--bg-main-color);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+
+    @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+      background: url(../images/tablet/frame@2x.png) var(--bg-main-color);
+      background-repeat: no-repeat;
+      background-position: bottom;
+      background-size: contain;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 61px;
+    background: url(../images/desctop/frame.png) var(--bg-main-color);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+
+    @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+      background: url(../images/desctop/frame@2x.png) var(--bg-main-color);
+      background-repeat: no-repeat;
+      background-position: bottom;
+      background-size: contain;
+  }
+}
+}
+
+.hero--right__title {
+  margin-bottom: 32px;
+  padding-top: 61px;
+  max-width: 247px;
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.27;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--heading-text-color);
+  @media screen and (min-width: 768px) {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.28;
+    max-width: 183px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 38px;
+    line-height: 1.26;
+    letter-spacing: 0.04em;
+    max-width: 367px;
+  }
+}
+.hero--right__span {
+  font-size: 34px;
+  line-height: 96.5%;
+  @media screen and (max-width: 319px) {
+    font-size: 26px;
+    line-height: 1.27;
+  }
+  @media screen and (min-width: 768px) {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 55%;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 38px;
+    line-height: 1.26;
+    letter-spacing: 0.04em;
+    max-width: 367px;
+  }
+}
+.hero--right__group {
+  display: flex;
+  align-items: center;
+  padding-left: 0;
+
+  margin: 0;
+
+  @media screen and (min-width: 768px) {
+    padding: 0;
+    margin-bottom: 28px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 40px;
+  }
+}
+.hero--right__products {
+  margin-right: 8px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 32px;
+  }
+}
+.hero--right__link-products {
+  padding: 7px 13px;
+  border: 2px solid #f8d24e;
+  border-radius: 8px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 9px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: var(--title-secondary-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    border: 2px solid #0a8817;
+    background-color: transparent;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 12px 36px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.29;
+  }
+}
+.hero--right__link-how {
+  font-weight: 600;
+  font-size: 8px;
+  line-height: 1.25;
+  display: flex;
+  align-items: center;
+  text-decoration-line: underline;
+
+  color: #f8d24e;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: #0a8817;
+  }
+  @media screen and (min-width: 1200px) {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.21;
+  }
+}
+.hero-article {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+.hero-article__link {
+  display: flex;
+  align-items: center;
+}
+.hero-article__img {
+  display: block;
+  transition: transform 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+  .hero-article__link:hover &{
+    transform: rotate(360deg);
+
+  }
+}
+.hero-article__text {
+  display: flex;
+  align-items: center;
+  
+
+  margin-left: 33px;
+  max-width: 155px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.42;
+  color: var(--heading-text-color);
+  @media screen and (min-width: 1200px) {
+    margin-left: 16px;
+    font-weight: 400;
+font-size: 14px;
+line-height: 1.41;
+max-width: 220px;
+  }
+
+}
+.hero-article__button {
+  padding: 0;
+  margin-top: 20px;
+  margin-left: 33px;
+  border: none;
+  background-color: transparent;
+  line-height: 0;
+  color: var(--heading-text-color);
+  cursor: pointer;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (min-width: 1200px) {
+    margin-left: 16px;
+  }
+  &:hover,
+  &:focus {
+    color: var(--title-secondary-color);
+  } 
+}
+.hero-article__svg {
+  fill: currentColor;
+}
+.hero--left__group {
+  padding: 0;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+.hero--left__number {
+  margin-bottom: 4px;
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 34px;
+  text-align: right;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: var(--title-secondary-color);
+  @media screen and (min-width: 1200px) {
+    font-weight: 900;
+font-size: 46px;
+line-height: 1.22;
+  }
+}
+.hero--left__text {
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.25;
+  text-align: right;
+
+  color: var(--heading-text-color);
+  @media screen and (min-width: 1200px) {
+    font-weight: 400;
+font-size: 14px;
+line-height: 1.21;
+  }
+}
+
+.decoration_img {
+  pointer-events: all;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.decoration_ice-cream {
+  overflow: hidden;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  max-height: 700px;
+  overflow: hidden;
+  pointer-events: auto;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+  @media screen and (max-width: 767px) {
+    justify-content: center;
+    bottom: -53px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  @media screen and (min-width: 768px) {
+    bottom: -57px;
+    &:hover {
+      transform: scale(1.1);
+    }
+    
+  }
+  @media screen and (min-width: 1200px) {
+
+    bottom: -95px;
+
+  }
+  
+}
