@@ -164,8 +164,9 @@
   }
 }
 .hero-article {
-  @media screen and (max-width: 767px) {
-    display: none;
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
   }
 }
 .hero-article__link {
@@ -223,9 +224,14 @@ max-width: 220px;
 }
 .hero--left__group {
   padding: 0;
-
-  @media screen and (max-width: 767px) {
-    display: none;
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+    padding-top: 28px;
+    
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 60px;
   }
 }
 .hero--left__number {
