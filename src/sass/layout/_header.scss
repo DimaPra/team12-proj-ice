@@ -10,6 +10,9 @@
 }
 
 // header
+.header {
+  background-color: var(--bg-main-color);
+}
 
 .conteiner--header {
   background-color: var(--bg-main-color);
@@ -71,7 +74,7 @@
 
   &:hover,
   &:focus {
-    color: var(--title-secondary-color);
+    color: #f8d24e;
   }
 }
 .button--modal {
