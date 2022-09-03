@@ -1,2 +1,21 @@
-@import './common';
-@import './example';
+@import './base/base';
+
+@import './base/common';
+
+@import "./base/conteiner";
+@import "./base/variables";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import './layout/footer'
