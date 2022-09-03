@@ -1,0 +1,130 @@
+.contact{
+
+   display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    &__list{
+        display: flex;
+        flex-direction: column;
+    align-items: center;
+    
+    row-gap: 20px;
+
+    }
+
+    &__item{
+      max-width: 280px;
+      padding: 40px 32px;
+  
+      
+      background-color: var(--title-main-color);
+      box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+    }
+  &__text{
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 186% ; 
+  
+      color: var(--title-secondary-color);
+  }
+
+  &__city{
+    margin-bottom: 8px;
+  }
+
+
+  &__subtitle{
+display: inline-block;
+text-align: center;
+padding: 0 18px;
+margin-bottom: 20px;
+max-width: 100%;
+color: var(--title-main-color);
+
+    background-color:#F8D24E;
+    border-radius: 4px;
+    letter-spacing: 0.04em;
+  }
+
+  &__address{
+    color: var( --bg-orange-card);
+    line-height: 183%;
+    letter-spacing: 0.04em;
+  }
+
+  &__city{
+    letter-spacing: 0.04em;
+  }
+
+//   &__work-day{}
+&__work-time{
+    color: #ABABAB;
+    margin-bottom: 8px;
+}
+
+&__link{
+    display: block;
+    color: #131313;
+}
+// ===========================линия декора========================
+&__decor{
+    border: 1px solid #E1E1E1;
+    margin: 24px 0;
+}
+
+  }
+
+// ==========================Обнуляющий клас========================
+.default{
+    margin: 0;
+}
+
+// ============================BUTONS================================
+.contact-btn{
+
+  display: flex;
+  flex-direction: column;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 0 62px;
+
+    &__location{
+        background: #F8D24E;
+        border: none;
+        border-radius: 10px;
+        padding: 12px 34px;
+        margin-top: 32px;
+        width: 100%;
+    }
+
+    &__Franchise{
+        margin-top: 16px;
+        border: 2px solid #F8D24E;
+        background: #84A178;
+        border-radius: 10px;
+        padding: 12px 46px;
+        width: 100%;
+    }
+
+    &__text{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 1.28;
+  
+    }
+
+    // &__icon{
+    //     fill:#84A178;
+    //     background-color: #131313;
+    //     margin-left: 10px;
+    // }
+}
