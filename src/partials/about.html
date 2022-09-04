@@ -1,0 +1,94 @@
+<section class="about">
+
+    <div class="container">
+
+        <label class="about__lebel" >
+            tradition and love
+        </label>
+
+        <h2 class="about__title">
+            how it’s made?
+        </h2>
+        <div class="about__list">
+
+            <div class="about__picture">
+
+                <div class="about__picture--bg">
+                   
+                    <picture class="about__picture--img">
+                        
+                        <source media="(min-width: 1200px)" 
+                        srcset="./images/About/cow-490.png 1x,
+                        ./images/About/cow-490@2x.png 2x" />
+                    
+                        <source media="(min-width: 768px)" 
+                        srcset="./images/About/cow-330.png 1x,
+                        ./images/About/cow-330@2x.png 2x" />
+                    
+                        <source media="(max-width: 767px)" 
+                        srcset="./images/About/cow-278.png 1x,
+                        ./images/About/cow-278@2x.png 2x" />
+                    
+                    
+                        <img src="images/About/cow-490.png" alt="cow" >
+                    </picture>
+
+                </div>
+
+            </div>
+
+            <div class="about__text">
+                <p class="about__text--paragraph">
+                    Ice is a place where you will become not only a little happier, but also healthier. Health is the main value for us, and we follow it when creating our handmade desserts.
+
+                </p>
+                <p class="about__text--paragraph">
+                    We use traditional recipes and 100% natural ingredients. Our products are so natural that they can be given to children from the age of three years. Sweets lovers can expect 55 types of ice cream, 15 types of coffee and 23 milkshakes. 
+                </p>
+                <p class="about__text--paragraph">
+                    This is enough to choose ice cream and coffee for any mood!
+                </p>
+                <button type="button" class="about__btn" data-modal-open>Read more 
+                </button>
+
+            
+            </div>
+
+        </div>
+
+        <div class="about__backdrop is-hidden" data-modal>
+            <div class="about__modal">
+                <h3 class="about__modal--title">
+                    how it’s made?
+                </h3>
+
+                <iframe class="about__modal--video"    src="https://www.youtube.com/embed/qhqRSvWy-h0"
+                 title="YouTube video player" 
+                 frameborder="0" 
+                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                 allowfullscreen
+                 width="100%">
+
+                </iframe>
+
+                
+                <p class="about__modal--text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                </p>
+
+                <button type="button" 
+                class="about__modal--close" data-modal-close>
+                    <svg width="16"
+                    height="16"
+                    aria-label="Переключатель мобильного меню">
+                        <use  href="./images/symbol-defs.svg#icon-close_40px"></use>
+                    </svg>
+                </button>
+
+
+            </div>
+        </div>
+
+    </div>
+    <script src="./modal.js"></script>
+</section>

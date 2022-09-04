@@ -1,0 +1,149 @@
+.about__backdrop {
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:transparent;
+    transform: scale(1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 1;
+  }
+  
+  .about__backdrop.is-hidden {
+    transform: scale(0);
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .about__modal {
+   
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid #F8D24E;
+    border-radius: 10px;
+  
+   
+  
+    background-color: #ffffff;
+    padding: 32px 60px;
+    border-color: #F8D24E;
+
+    @media screen and (min-width: 320px) {
+     width: 280px;
+     height: 470px;
+     padding: 28px;
+     
+    }
+    
+    @media screen and (min-width: 480px){
+      width: 450px;
+      height: 470px;
+    }
+
+    @media screen and (min-width: 768px){
+      width: 568px;
+      height: 449px;
+
+
+    }
+
+  }
+  
+  
+  
+  .about__modal--title{
+    text-align: center;
+    font-family: 'Seymour One';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 1.4;
+margin: 0;
+margin-bottom: 32px;
+color: #000;
+
+@media screen and (min-width: 320px) {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+   }
+
+   @media screen and (min-width: 480px){
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.4;
+    margin: 0;
+    margin-bottom: 32px;
+   }
+
+  }
+
+  .about__modal--video{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+    border-radius: 10px;
+    width: 100%;
+  
+
+   @media screen and (min-width: 320px) {
+    width: 224px;
+    height: 199px;
+    margin-bottom: 20px;
+    width: 100%;
+   }
+   @media screen and (min-width: 480px){
+    margin-bottom: 32px;
+   }
+    
+  }
+
+  .about__modal--text{
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+
+color: #000000;
+text-align: justify;
+margin: 0;
+
+@media screen and (min-width: 320px){
+  font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 1.4;
+padding-bottom: 20px;
+}
+@media screen and (min-width: 480px){
+  font-size: 16px;
+line-height: 1,37;
+}
+
+  }
+
+  
+  .about__modal--close {
+    cursor: pointer;
+    position: absolute;
+    top: 11px;
+    right: 15px;
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    z-index: 999;
+  
+    &:focus,
+    &:hover {
+      fill: #84a178;
+    }
+  }
