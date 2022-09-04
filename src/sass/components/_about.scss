@@ -178,27 +178,16 @@ height: 330px;
   }
 
   @media screen and (min-width: 1200px){
-    width: 500px;
-    height: 500px;
+    width: 490px;
+    height: 490px;
   }
 }
 
 .about__picture--img{
   position: absolute;
-  width: 278px;
-  height: 278px;
   transform: translate(0px,25px);
-
-  @media screen and (min-width: 768px){
-    width: 330px;
-    height: 330px;
-      }
-      @media screen and (min-width: 1200px){
-        width: 490px;
-        height: 490px;
-      }
-  
 }
+
 .about__text--paragraph{
   
 
