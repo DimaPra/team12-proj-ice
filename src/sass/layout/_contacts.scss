@@ -1,21 +1,29 @@
 .contact{
 
    display: flex;
+  //  position: relative;
     flex-direction: column;
-
     align-items: center;
+
+padding-bottom: 120px;
+background-color: #84A178;
+width: 100%;
 
     &__list{
         display: flex;
+//         position: absolute;
+// //         top:50%;
+// // left:50%;
+// // transform:translate(-50%, -50%);
         flex-direction: column;
     align-items: center;
-    
+    max-width: 480px;
     row-gap: 20px;
-
     }
 
     &__item{
       max-width: 280px;
+      width: 100%;
       padding: 40px 32px;
   
       
@@ -28,7 +36,7 @@
       font-style: normal;
       font-weight: 500;
       font-size: 12px;
-      line-height: 186% ; 
+      line-height: 1.83 ; 
   
       color: var(--title-secondary-color);
   }
@@ -53,12 +61,16 @@ color: var(--title-main-color);
 
   &__address{
     color: var( --bg-orange-card);
-    line-height: 183%;
+    line-height: 1.83;
     letter-spacing: 0.04em;
   }
-
+&__address:hover,
+&__address:focus{
+  text-decoration:underline;
+}
   &__city{
     letter-spacing: 0.04em;
+    line-height: 1.5;
   }
 
 //   &__work-day{}
@@ -70,11 +82,13 @@ color: var(--title-main-color);
 &__link{
     display: block;
     color: #131313;
+    line-height: 1.5;
 }
 // ===========================линия декора========================
 &__decor{
     border: 1px solid #E1E1E1;
     margin: 24px 0;
+    max-width: 100%;
 }
 
   }
@@ -94,7 +108,7 @@ color: var(--title-main-color);
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
-    padding: 0 62px;
+
     width: 100%;
     
 
@@ -122,10 +136,130 @@ color: var(--title-main-color);
         font-size: 14px;
         line-height: 1.28;
         width: 100%;
+
+        display: inline-block;
        
     }
 
     &__icon{
         margin-left: 10px;
     }
+}
+.card-container{
+  max-width:216px;
+}
+// =======================TABLET========================
+@media screen and (min-width: 768px) {
+  .contact{
+    padding-left: 16px;
+    padding-right: 16px;
+    &__list{
+   flex-direction: row;
+   justify-content: center;
+   align-items: stretch;
+   max-width: 768px;
+
+      column-gap: 32px;
+    }
+    &__item{
+      padding:40px 40px 40px 24px;
+      // max-height:538px 
+      width: 224px;
+    }
+
+    &__subtitle{
+      font-size: 16px;
+      line-height: 1.87;
+    }
+    &__city{
+font-size: 14px;
+line-height: 1.85;
+
+    }
+  &__address{
+    font-size: 16;
+    line-height: 1.85;
+  }
+  &__work-day{
+    font-size: 14px;
+    line-height: 1.85;
+  }
+  &__work-time{
+    font-size: 14px;
+    line-height: 1.85;
+  }
+  &__link{
+    font-size: 14px;
+    line-height: 1.85;
+  }
+    // ==========================DECOR LINE============================
+  &__decor{
+    margin: 32px 0;
+  }
+  }
+  .card-container{
+    max-width:160px ;
+  }
+  .card-first{
+    max-width: 173px;
+  }
+  
+// ============================BUTONS================================
+  .contact-btn{
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    column-gap: 16px;
+    width: 100%;
+    padding: 0;
+
+    &__text{
+      margin: 0;
+      margin-top: 64px;
+      width: 196px;
+    
+    }
+  }
+}
+// ===================================DESKTOP================================
+@media screen and (min-width: 1200px) {
+  .contact{
+
+
+  min-width: 1200px;
+&__item{
+  padding: 40px;
+min-width: 368px;
+}
+&__subtitle{
+  line-height: 1.87;
+}
+&__city{
+  font-size: 16px;
+  line-height: 1.87;
+}
+&__address{
+
+font-size: 16px;
+line-height: 1.81;
+}
+&__work-day{
+  font-size: 16px;
+  line-height: 1.87;
+}
+&__work-time{
+  font-size: 16px;
+  line-height: 1.87;
+}
+&__link{
+  font-size: 16px;
+  line-height: 1.81;
+}
+  }
+  .card-container{
+    max-width: 243px;
+  }
+  .card-first{
+    max-width: 288px;
+  }
 }
