@@ -1,0 +1,204 @@
+.about {
+  background-color: #84a178;
+}
+
+.about__lebel {
+  display: block;
+  text-align: center;
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.22;
+  text-transform: uppercase;
+
+  color: #fcfcfc;
+
+  padding-top: 60px;
+  margin-bottom: 12px;
+
+  @media screen and (min-width: 768px) {
+    font-weight: 800;
+    font-size: 22px;
+    letter-spacing: 0.04em;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 30px;
+    line-height: 1.23;
+    color: #fcfcfc;
+    padding-top: 44px;
+  }
+
+}
+
+.about__title {
+  font-family: "Seymour One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.26;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: #fcfcfc;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 32px;
+  width: 200px;
+  margin-top: 0;
+
+  @media screen and (min-width: 768px) {
+    font-size: 34px;
+    letter-spacing: 0.06em;
+    margin-bottom: 40px;
+    width: 456px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: 1.25;
+    width: 483px;
+    margin-bottom: 82px;
+  }
+
+}
+
+.about__text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.58;
+  color: #ffffff;
+  margin-right: 70px;
+  margin-left: 5px;
+
+  @media screen and (min-width: 768px) {
+    line-height: 1.76;
+    margin-top: 30px;
+    width: 334px;
+    margin-right: 34px;
+    margin-left: 35px;
+    
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.94;
+    width: 464px;
+    margin-left: 99px;
+    margin-right: 118px;
+    margin-top: 90px;
+    
+  }
+
+}
+
+.about__btn {
+  display: block;
+  background-color: #f8d24e;
+  width: 176px;
+  height: 44px;
+  border-radius: 10px;
+  padding-right: 26px;
+  padding-top: 4px;
+
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+
+  align-items: center;
+  text-align: center;
+  color: #000;
+  cursor: pointer;
+  border-color: transparent;
+
+  &:hover,
+  &:focus {
+    background-color: #0A8817;
+  }
+
+  &::after {
+    position: absolute;
+    right: 37px;
+    width: 7px;
+    height: 9px;
+    top: 16px;
+    content: "";
+    background-size: contain;
+    // display: inline-block;
+
+    background-repeat: no-repeat;
+
+    background-image: url(../images/About/Vector.svg);
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-top: 40px;
+    width: 168px;
+  }
+  
+}
+
+
+
+.about__list{
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+
+  @media screen and (min-width: 1200px) {
+    
+  }
+
+}
+
+.about__picture{
+  display: flex;
+  justify-content: center;
+
+}
+
+.about__picture--bg{
+  position: relative;
+  width: 278px;
+  height: 278px;
+  margin-bottom: 62px;
+  border-radius: 50%;
+  background-color: #F8D24E;
+
+  @media screen and (min-width: 768px){
+width: 330px;
+height: 330px;
+  }
+
+  @media screen and (min-width: 1200px){
+    width: 500px;
+    height: 500px;
+  }
+}
+
+.about__picture--img{
+  position: absolute;
+  width: 278px;
+  height: 278px;
+  transform: translate(0px,25px);
+
+  @media screen and (min-width: 768px){
+    width: 330px;
+    height: 330px;
+      }
+      @media screen and (min-width: 1200px){
+        width: 500px;
+        height: 500px;
+      }
+  
+}
