@@ -1,4 +1,19 @@
+@import './base/base';
 
+@import './base/common';
+
+@import "./base/contаiner";
+@import "./base/variables";
+
+@import './layout/header';
+@import './layout/hero';
+@import "./components/about";
+@import "./components/about-modal";
+@import './layout/footer';
+
+@import './layout/advantages';
+@import './layout/contacts';
+@import "./layout/customer-reviews"
 
 
 
