@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.slider {
+    overflow: hidden;
+    outline: 1px dotted #000;
+    width: 100%;
+
+    @media screen and (min-width: 480px) {
+        width: 480px;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 768px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
+    }
+}
+
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.navigation {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.bar {
+    width: 12px;
+    height: 12px;
+    margin: 6px;
+    cursor: pointer;
+    background: #d9d9d9;
+    opacity: 0.5;
+    border-radius: 10px;
+    transition: all 0.4s ease;
+}
+
+.bar:hover {
+    opacity: 1;
+    transform: scale(1.1);
+    background: #84a178;
+}
+
+.bar:active {
+    opacity: 1;
+    transform: scale(1.1);
+    background: #84a178;
+}
+
+input[name="r"] {
+    position: absolute;
+    visibility: hidden;
+}
+
+.slides {
+    width: 400%;
+    height: 100%;
+    display: flex;
+}
+
+.slide {
+    width: 25%;
+    transition: all 0.6s ease;
+}
+
+.img {
+    width: 85px;
+    height: 85px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 32px;
+}
+
+#r1:checked~.s1 {
+    margin-left: 0;
+}
+
+#r2:checked~.s1 {
+    margin-left: -25%;
+}
+
+#r3:checked~.s1 {
+    margin-left: -50%;
+}
+
+#r4:checked~.s1 {
+    margin-left: -75%;
+}
+
+.slide__text {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.04em;
+    color: #fcfcfc;
+}
+
+.slide__bg-for-text {
+    background: #84a178;
+    border-radius: 24px;
+    width: 100%;
+    text-align: center;
+    padding: 39px 34px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 32px;
+
+    @media screen and (min-width: 480px) {
+        width: 440px;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 768px;
+        padding: 28px 80px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 968px;
+        height: 138px;
+        padding: 39px 73px;
+    }
+}
+
+.slide__rew-name {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.87;
+
+    text-align: center;
+
+    color: #131313;
+
+    margin-bottom: 26px;
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 44px;
+    }
+}
