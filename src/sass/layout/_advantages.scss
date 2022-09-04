@@ -1,0 +1,239 @@
+.advantages {
+    background-color: var(--bg-main-color);
+    ;
+}
+
+.advantages__title {
+
+    font-family: 'Montserrat';
+    text-align: center;
+    color: var(--heading-text-color);
+}
+
+.advantages__item {
+    position: relative;
+
+}
+
+.advantages__descr {
+    font-family: 'Montserrat';
+    text-align: center;
+    color: var(--heading-text-color);
+}
+
+.advantages__item.icon-cow::before {
+    content: "";
+    display: block;
+    background-size: contain;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #F8D24E;
+    border-radius: 50px;
+    background-repeat: no-repeat;
+
+    left: 0;
+    right: 0;
+    margin: auto;
+
+    @media screen and (max-width: 767px) {
+        top: -66px;
+    }
+
+    @media screen and (min-width: 768px) {
+        top: -82px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        top: -90px;
+    }
+
+    background-image: url(../images/icon-advantages/cow.png);
+    background-size: 36px 36px;
+    background-position: center;
+
+}
+
+.advantages__item.icon-weight::before {
+    content: "";
+    display: block;
+    background-size: contain;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #F8D24E;
+    border-radius: 50px;
+    background-repeat: no-repeat;
+
+    left: 0;
+    right: 0;
+    margin: auto;
+
+    @media screen and (max-width: 767px) {
+        top: -66px;
+    }
+
+    @media screen and (min-width: 768px) {
+        top: -82px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        top: -90px;
+    }
+
+    background-image: url(../images/icon-advantages/weight.png);
+    background-size: 36px 36px;
+    background-position: center;
+
+}
+
+.advantages__item.icon-cream::before {
+    content: "";
+    display: block;
+    background-size: contain;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #F8D24E;
+    border-radius: 50px;
+    background-repeat: no-repeat;
+
+    left: 0;
+    right: 0;
+    margin: auto;
+
+    @media screen and (max-width: 767px) {
+        top: -66px;
+    }
+
+    @media screen and (min-width: 768px) {
+        top: -82px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        top: -90px;
+    }
+
+    background-image: url(../images/icon-advantages/ice-cream.png);
+    background-size: 36px 36px;
+    background-position: center;
+
+}
+
+.advantages__list {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+
+    .advantages__item {
+        max-width: 230px;
+        margin-left: auto;
+        margin-right: auto;
+
+        &:not(:last-child) {
+            margin-bottom: 94px;
+        }
+
+    }
+
+    .advantages__title {
+        font-family: 'Roboto';
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.17;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        margin-bottom: 18px;
+
+    }
+
+    .advantages__descr {
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 1.7;
+
+    }
+
+    .advantages {
+        padding-top: 86px;
+        padding-bottom: 60px;
+    }
+
+
+}
+
+
+@media screen and (min-width: 768px) {
+
+    .advantages__item {
+        max-width: 152px;
+
+    }
+
+    .advantages__title {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 1.23;
+        text-align: center;
+        letter-spacing: 0.04em;
+        margin-bottom: 16px;
+    }
+
+    .advantages__descr {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+        text-align: center;
+    }
+
+    .advantages__list {
+        gap: 80px;
+        justify-content: center;
+
+    }
+
+    .advantages {
+        padding-top: 105px;
+        padding-bottom: 204px;
+    }
+
+}
+
+
+@media screen and (min-width: 1200px) {
+
+    .advantages__item {
+        max-width: 368px;
+
+    }
+
+    .advantages__list {
+        gap: 32px;
+        justify-content: center;
+    }
+
+    .advantages__title {
+        font-weight: 700;
+        font-size: 58px;
+        line-height: 1.22;
+        text-align: center;
+        letter-spacing: 0.04em;
+    }
+
+    .advantages__descr {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.75;
+        text-align: center;
+        letter-spacing: 0.02em;
+    }
+
+    .advantages {
+        padding-top: 120px;
+        padding-bottom: 180px;
+    }
+
+}
