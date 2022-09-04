@@ -1,337 +1,359 @@
 .contact{
-// ==================================VISUAL HIDDEN=================
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  border: 0;
-  clip: rect(0 0 0 0);
-}
-// ==================================================================
-   display: flex;
-  //  position: relative;
+  // ==================================VISUAL HIDDEN=================
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+  }
+  // ==================================================================
+  background-color: #84A178;
+  width: 100%;
+  padding-bottom: 120px;
+  
+  &__position{
+    display: flex;
+    
     flex-direction: column;
     align-items: center;
-
-padding-bottom: 120px;
-background-color: #84A178;
-width: 100%;
-
-    &__list{
-        display: flex;
-//         position: absolute;
-//         top:50%;
-// left:50%;
-// transform:translate(-50%, -50%);
-        flex-direction: column;
-    align-items: center;
-    max-width: 480px;
-    row-gap: 20px;
-    }
-
-    &__item{
-      max-width: 280px;
-      width: 100%;
-      padding: 40px 32px;
-  
-      
-      background-color: var(--title-main-color);
-      box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
-  border-radius: 24px;
-    }
-  &__text{
-      font-family: 'Montserrat';
-      font-style: normal;
-      font-weight: 500;
-      font-size: 12px;
-      line-height: 1.83 ; 
-  
-      color: var(--title-secondary-color);
-  }
-
-  &__city{
-    margin-bottom: 8px;
-  }
-
-
-  &__subtitle{
-display: inline-block;
-text-align: center;
-padding: 0 18px;
-margin-bottom: 20px;
-max-width: 100%;
-color: var(--title-main-color);
-
-    background-color:#F8D24E;
-    border-radius: 4px;
-    letter-spacing: 0.04em;
-  }
-
-  &__address{
-    display: inline-block;
-    color: var( --bg-orange-card);
-    line-height: 1.83;
-    letter-spacing: 0.04em;
-  }
-
-  &__address-first{
-    max-width: 190px;
-  }
-  &__address-second{
-  max-width: 212px;
-  }
-  &__address-third{
-    max-width: 185px;
-  }
-&__address:hover,
-&__address:focus{
-  text-decoration:underline;
-}
-  &__city{
-    letter-spacing: 0.04em;
-    line-height: 1.5;
-  }
-
-//   &__work-day{}
-&__work-time{
-    color: #ABABAB;
-    margin-bottom: 8px;
-}
-
-&__link{
-    display: block;
-    color: #131313;
-    line-height: 1.5;
-}
-// ===========================линия декора========================
-&__decor{
-    border: 1px solid #E1E1E1;
-    margin: 24px 0;
-    max-width: 100%;
-}
-
-  }
-
-// ==========================Обнуляющий клас========================
-.default{
-    margin: 0;
-}
-
-// ============================BUTONS================================
-.contact-btn{
-
-
- 
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-    font-family: 'Montserrat';
-    font-style: normal;
-
-
+    
    
     
-
-    &__location{
-        background: #F8D24E;
-        border: none;
-        border-radius: 10px;
-        padding: 14px 34px;
-        margin-top: 32px;
-        transition: background-color, 250ms;
-    }
    
-
-    &__Franchise{
-        margin-top: 16px;
-        border: 2px solid #F8D24E;
-        background: #84A178;
-        border-radius: 10px;
-        padding: 12px 46px;
-    }
- // ================================BUTTON HOVER/FOCUS=====================
- &__location:hover{
-  background-color: #0A8817;
-  transition: background-color, 250ms;
-}
-&__location:focus{
-  border: none;
-  color: #FCFCFC;
-  fill:#FCFCFC;
-}
-&__Franchise:hover{
-  border: 2px solid  #0A8817;
-  transition: border 250ms;
-}
-&__Franchise:focus{
-border: 2px solid #0A8817;
-color: #FCFCFC;
-fill:#FCFCFC;
-}
+  }
+      &__list{
+        margin-left: auto;
+        margin-right: auto;
+          display: flex;
+          position: relative;
+          
+  transform:translate(-0%, -0%);
+  margin-top:-355px;
+  left:0%;
+  transform:translate(-76%, -15%);
+  
+  
+  
+          flex-direction: column;
+      align-items: center;
+      max-width: 480px;
+      row-gap: 20px;
+      }
+  
+      &__item{
+        max-width: 280px;
+        width: 100%;
+        padding: 40px 32px;
+    
+        
+        background-color: var(--title-main-color);
+        box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+      }
     &__text{
         font-family: 'Montserrat';
         font-style: normal;
-        font-weight: 600;
-        font-size: 14px;
-        line-height: 1.28;
-        width: 100%;
-
-        display: flex;
-        justify-content: center;
-       
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.83 ; 
+    
+        color: var(--title-secondary-color);
     }
-
-    &__icon{
-      margin-left:10px ;
-    }
-    &__text:active, :hover, :focus {
-      outline: 0;
-      outline-offset: 0;
-  }
   
-}
-.card-container{
-  max-width:216px;
-}
-
-// =======================TABLET========================
-@media screen and (min-width: 768px) {
-  .contact{
-    padding-left: 16px;
-    padding-right: 16px;
-    &__list{
-   flex-direction: row;
-   justify-content: center;
-   align-items: stretch;
-   max-width: 768px;
-
-      column-gap: 32px;
-    }
-    &__item{
-      padding:40px 40px 40px 24px;
-      // max-height:538px 
-      width: 224px;
-    }
-
-    &__subtitle{
-      font-size: 16px;
-      line-height: 1.87;
-    }
     &__city{
-font-size: 14px;
-line-height: 1.85;
-
+      margin-bottom: 8px;
     }
-  &__address{
-    font-size: 16;
-    line-height: 1.85;
   
+  
+    &__subtitle{
+  display: inline-block;
+  text-align: center;
+  padding: 0 18px;
+  margin-bottom: 20px;
+  max-width: 100%;
+  color: var(--title-main-color);
+  
+      background-color:#F8D24E;
+      border-radius: 4px;
+      letter-spacing: 0.04em;
+    }
+  
+    &__address{
+      display: inline-block;
+      color: var( --bg-orange-card);
+      line-height: 1.83;
+      letter-spacing: 0.04em;
+    }
+  
+    &__address-first{
+      max-width: 190px;
+    }
+    &__address-second{
+    max-width: 212px;
+    }
+    &__address-third{
+      max-width: 185px;
+    }
+  &__address:hover,
+  &__address:focus{
+    text-decoration:underline;
   }
-  &__address-first{
-    max-width: 173px;
-  }
-  &__address-second{
-  max-width: 158px;
-
-  }
-  &__address-third{
-    max-width: 110px;
-  }
-  &__work-day{
-    font-size: 14px;
-    line-height: 1.85;
-  }
+    &__city{
+      letter-spacing: 0.04em;
+      line-height: 1.5;
+    }
+  
+  //   &__work-day{}
   &__work-time{
-    font-size: 14px;
-    line-height: 1.85;
-  }
-  &__link{
-    font-size: 14px;
-    line-height: 1.85;
-  }
-    // ==========================DECOR LINE============================
-  &__decor{
-    margin: 32px 0;
-  }
-  }
-  .card-container{
-    max-width:160px ;
-  }
-  .card-first{
-    max-width: 173px;
+      color: #ABABAB;
+      margin-bottom: 8px;
   }
   
-// ============================BUTONS================================
+  &__link{
+      display: block;
+      color: #131313;
+      line-height: 1.5;
+  }
+  // ===========================линия декора========================
+  &__decor{
+      border: 1px solid #E1E1E1;
+      margin: 24px 0;
+      max-width: 100%;
+  }
+  
+    }
+  
+  // ==========================Обнуляющий клас========================
+  .default{
+      margin: 0;
+  }
+  
+  // ============================BUTONS================================
   .contact-btn{
-    flex-direction: row;
+  
+  
+   
+  
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    column-gap: 16px;
-    width: 100%;
-    padding: 0;
-
-    &__text{
-      margin: 0;
-      margin-top: 64px;
-      width: 196px;
-    
-    }
+      font-family: 'Montserrat';
+      font-style: normal;
+      // position: relative;
+          
+      // transform:translate(-0%, -0%);
+      // top:-355px;
+      // left:0%;
+      // transform:translate(-76%, -15%);
+  
+     
+      
+  
+      &__location{
+          background: #F8D24E;
+          border: none;
+          border-radius: 10px;
+          padding: 14px 34px;
+          margin-top: 32px;
+          transition: background-color, 250ms;
+      }
+     
+  
+      &__Franchise{
+          margin-top: 16px;
+          border: 2px solid #F8D24E;
+          background: #84A178;
+          border-radius: 10px;
+          padding: 12px 46px;
+      }
+   // ================================BUTTON HOVER/FOCUS=====================
+   &__location:hover{
+    background-color: #0A8817;
+    transition: background-color, 250ms;
   }
-}
-// ===================================DESKTOP================================
-@media screen and (min-width: 1200px) {
-  .contact{
-
-
-  min-width: 1200px;
-&__item{
-  padding: 40px;
-min-width: 368px;
-}
-&__subtitle{
-  line-height: 1.87;
-}
-&__city{
-  font-size: 16px;
-  line-height: 1.87;
-}
-&__address{
-
-font-size: 16px;
-line-height: 1.81;
-}
-&__address-first{
-  min-width:262px;
-}
-&__address-second{
-min-width:300px;
-
-}
-&__address-third{
-  min-width:261px;
-}
-&__work-day{
-  font-size: 16px;
-  line-height: 1.87;
-}
-&__work-time{
-  font-size: 16px;
-  line-height: 1.87;
-}
-&__link{
-  font-size: 16px;
-  line-height: 1.81;
-}
+  &__location:focus{
+    border: none;
+    color: #FCFCFC;
+    fill:#FCFCFC;
+  }
+  &__Franchise:hover{
+    border: 2px solid  #0A8817;
+    transition: border 250ms;
+  }
+  &__Franchise:focus{
+  border: 2px solid #0A8817;
+  color: #FCFCFC;
+  fill:#FCFCFC;
+  }
+      &__text{
+          font-family: 'Montserrat';
+          font-style: normal;
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 1.28;
+          width: 100%;
+  
+          display: flex;
+          justify-content: center;
+         
+      }
+  
+      &__icon{
+        margin-left:10px ;
+      }
+      &__text:active, :hover, :focus {
+        outline: 0;
+        outline-offset: 0;
+    }
+    
   }
   .card-container{
-    max-width: 243px;
+    max-width:216px;
   }
-  .card-first{
-    max-width: 288px;
+  
+  // =======================TABLET========================
+  @media screen and (min-width: 768px) {
+    .contact{
+      padding-left: 16px;
+      padding-right: 16px;
+      &__list{
+     flex-direction: row;
+     justify-content: center;
+     align-items: stretch;
+     max-width: 768px;
+  
+        column-gap: 32px;
+      }
+      &__item{
+        padding:40px 40px 40px 24px;
+        // max-height:538px 
+        width: 224px;
+      }
+  
+      &__subtitle{
+        font-size: 16px;
+        line-height: 1.87;
+      }
+      &__city{
+  font-size: 14px;
+  line-height: 1.85;
+  
+      }
+    &__address{
+      font-size: 16;
+      line-height: 1.85;
+    
+    }
+    &__address-first{
+      max-width: 173px;
+    }
+    &__address-second{
+    max-width: 158px;
+  
+    }
+    &__address-third{
+      max-width: 110px;
+    }
+    &__work-day{
+      font-size: 14px;
+      line-height: 1.85;
+    }
+    &__work-time{
+      font-size: 14px;
+      line-height: 1.85;
+    }
+    &__link{
+      font-size: 14px;
+      line-height: 1.85;
+    }
+      // ==========================DECOR LINE============================
+    &__decor{
+      margin: 32px 0;
+    }
+    }
+    .card-container{
+      max-width:160px ;
+    }
+    .card-first{
+      max-width: 173px;
+    }
+    
+  // ============================BUTONS================================
+    .contact-btn{
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      column-gap: 16px;
+      width: 100%;
+      padding: 0;
+  
+      &__text{
+        margin: 0;
+        margin-top: 64px;
+        width: 196px;
+      
+      }
+    }
   }
-}
+  // ===================================DESKTOP================================
+  @media screen and (min-width: 1200px) {
+    .contact{
+  
+  &__list{
+    transform:translate(-0%, -0%);
+          margin-top:-85px;
+  left:0%;
+  transform:translate(-76%, -15%);
+  }
+    min-width: 1200px;
+  &__item{
+    padding: 40px;
+  min-width: 368px;
+  }
+  &__subtitle{
+    line-height: 1.87;
+  }
+  &__city{
+    font-size: 16px;
+    line-height: 1.87;
+  }
+  &__address{
+  
+  font-size: 16px;
+  line-height: 1.81;
+  }
+  &__address-first{
+    min-width:262px;
+  }
+  &__address-second{
+  min-width:300px;
+  
+  }
+  &__address-third{
+    min-width:261px;
+  }
+  &__work-day{
+    font-size: 16px;
+    line-height: 1.87;
+  }
+  &__work-time{
+    font-size: 16px;
+    line-height: 1.87;
+  }
+  &__link{
+    font-size: 16px;
+    line-height: 1.81;
+  }
+    }
+    .card-container{
+      max-width: 243px;
+    }
+    .card-first{
+      max-width: 288px;
+    }
+  }
