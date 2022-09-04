@@ -1,0 +1,17 @@
+<form class="franchise-modal">
+            <p class="modal-title">Thank you for your interest in owning an Ice Cream shop</p>
+            <p class="modal-descr">Due to the overwhelming volume of franchise requests we are not accepting new
+                franchisee applications at this time. Once
+                the application process resumes, we will contact you for further information. Please fill out the
+                contact information
+                below and we will reach out for additional information. We appreciate your patience.</p>
+            <span class="modal-form-wrapper">
+                <input type="text" placeholder="Name" name="user_name" required pattern="[a-zA-zа-яА-ЯіІїЇ]+"
+                    minlength="2" class="modal-form-input">
+                <input type="tel" name="user_phone" placeholder="Phone" class="modal-form-input" required
+                    pattern="^[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="xxx-xxx-xx-xx">
+                <input type="email" placeholder="Email" name="user_email" class="modal-form-input" required>
+                <textarea name="user-message" class="modal-form-message" placeholder="Comment"></textarea>
+            </span>
+            <button type="submit" class="btn-submit-franchise">Submit</button>
+</form>
