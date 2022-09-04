@@ -22,12 +22,10 @@
 }
 
 .middle {
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    // top: 50%;
-    // left: 50%;
-    // transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .navigation {
@@ -83,7 +81,6 @@ input[name="r"] {
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 32px;
-    border-radius: 50%;
 }
 
 #r1:checked~.s1 {
