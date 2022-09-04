@@ -283,15 +283,16 @@ line-height: 1.21;
   overflow: hidden;
   pointer-events: auto;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  
-  @media screen and (max-width: 767px) {
+
     justify-content: center;
     bottom: -53px;
     left: 50%;
     transform: translateX(-50%);
-  }
+
   @media screen and (min-width: 768px) {
     bottom: -57px;
+    right: 0;
+    transform: none;
     &:hover {
       transform: scale(1.1);
     }

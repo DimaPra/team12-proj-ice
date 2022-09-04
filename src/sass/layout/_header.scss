@@ -47,15 +47,15 @@
   fill: currentColor;
 }
 .menu {
-  display: flex;
+  display: none;
 
   justify-content: center;
   align-items: center;
   padding: 0;
   margin-right: auto;
   margin-left: auto;
-  @media screen and (max-width: 1199px) {
-    display: none;
+  @media screen and (min-width: 1200px) {
+   display: flex;
   }
 }
 .menu__list {
