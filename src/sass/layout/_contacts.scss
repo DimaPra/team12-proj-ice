@@ -71,9 +71,20 @@ color: var(--title-main-color);
   }
 
   &__address{
+    display: inline-block;
     color: var( --bg-orange-card);
     line-height: 1.83;
     letter-spacing: 0.04em;
+  }
+
+  &__address-first{
+    max-width: 190px;
+  }
+  &__address-second{
+  max-width: 212px;
+  }
+  &__address-third{
+    max-width: 185px;
   }
 &__address:hover,
 &__address:focus{
@@ -219,6 +230,17 @@ line-height: 1.85;
   &__address{
     font-size: 16;
     line-height: 1.85;
+  
+  }
+  &__address-first{
+    max-width: 173px;
+  }
+  &__address-second{
+  max-width: 158px;
+
+  }
+  &__address-third{
+    max-width: 110px;
   }
   &__work-day{
     font-size: 14px;
@@ -282,6 +304,16 @@ min-width: 368px;
 
 font-size: 16px;
 line-height: 1.81;
+}
+&__address-first{
+  min-width:262px;
+}
+&__address-second{
+min-width:300px;
+
+}
+&__address-third{
+  min-width:261px;
 }
 &__work-day{
   font-size: 16px;
