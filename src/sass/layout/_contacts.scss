@@ -1,20 +1,21 @@
 .contact{
 
    display: flex;
-  //  position: relative;
+   position: relative;
     flex-direction: column;
     align-items: center;
 
 padding-bottom: 120px;
+padding-top: 400px;
 background-color: #84A178;
 width: 100%;
 
     &__list{
-        display: flex;
+//         display: flex;
 //         position: absolute;
-// //         top:50%;
-// // left:50%;
-// // transform:translate(-50%, -50%);
+//         top:50%;
+// left:50%;
+// transform:translate(-50%, -50%);
         flex-direction: column;
     align-items: center;
     max-width: 480px;
@@ -101,25 +102,29 @@ color: var(--title-main-color);
 // ============================BUTONS================================
 .contact-btn{
 
+
+ 
+
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
     font-family: 'Montserrat';
     font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
 
-    width: 100%;
+
+   
     
 
     &__location{
         background: #F8D24E;
         border: none;
         border-radius: 10px;
-        padding: 12px 34px;
+        padding: 14px 34px;
         margin-top: 32px;
-        
+        transition: background-color, 250ms;
     }
+   
 
     &__Franchise{
         margin-top: 16px;
@@ -128,7 +133,25 @@ color: var(--title-main-color);
         border-radius: 10px;
         padding: 12px 46px;
     }
-
+ // ================================BUTTON HOVER/FOCUS=====================
+ &__location:hover{
+  background-color: #0A8817;
+  transition: background-color, 250ms;
+}
+&__location:focus{
+  border: none;
+  color: #FCFCFC;
+  fill:#FCFCFC;
+}
+&__Franchise:hover{
+  border: 2px solid  #0A8817;
+  transition: border 250ms;
+}
+&__Franchise:focus{
+border: 2px solid #0A8817;
+color: #FCFCFC;
+fill:#FCFCFC;
+}
     &__text{
         font-family: 'Montserrat';
         font-style: normal;
@@ -137,17 +160,24 @@ color: var(--title-main-color);
         line-height: 1.28;
         width: 100%;
 
-        display: inline-block;
+        display: flex;
+        justify-content: center;
        
     }
 
     &__icon{
-        margin-left: 10px;
+      margin-left:10px ;
     }
+    &__text:active, :hover, :focus {
+      outline: 0;
+      outline-offset: 0;
+  }
+  
 }
 .card-container{
   max-width:216px;
 }
+
 // =======================TABLET========================
 @media screen and (min-width: 768px) {
   .contact{
