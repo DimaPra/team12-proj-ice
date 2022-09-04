@@ -1,0 +1,100 @@
+@media screen and (max-width: 767px) {
+    .gallery {
+        background-image: url("/src/images/ice-gallery/mobile/mobile-bg.png");
+        max-width: 480px;
+        
+    }
+
+    .gallery__photos {
+        transform: translateY(-20%);
+        left: 20%;
+    }
+    
+    
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+screen and (min-resolution: 192dpi) and (max-width: 767px),
+screen and (min-resolution: 2dppx) and (max-width: 767px) {
+    .gallery {
+    background-image: url("/src/images/ice-gallery/mobile/mobile-bg@2x.png");
+    }
+
+}
+
+.gallery {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 75px;
+    
+}
+
+.gallery__photos {
+    transform: translateY(-20%);      
+    width: 100%;
+    /*justify-content: center;*/
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 7px;
+}
+
+
+@media screen and (min-width: 768px) {
+    .gallery {
+      background-image: url("/src/images/ice-gallery/tablet/tablet-bg.png");
+      max-width: 768px;
+      margin-bottom: 55px;
+      height: 1075px;
+    }
+
+    .gallery__photos {
+        transform: translateY(-17%);
+        width: 704px;
+        border-radius: 18px;
+        left: 5%;
+        
+    }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+screen and (min-resolution: 192dpi) and (min-width: 768px),
+screen and (min-resolution: 2dppx) and (min-width: 768px) {
+    .gallery {
+        background-image: url("/src/images/ice-gallery/tablet/tablet-bg@2x.png");
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+    .gallery {
+        background-image: url("/src/images/ice-gallery/desktop/desktop-bg.png");
+        max-width: 1200px;
+        height: 1200px;
+        margin-bottom: 123px;
+        
+    }
+
+   
+    .gallery__photos {
+        transform: translateY(-17%);
+        left: 17%;
+        max-width: 1013px;
+        border-radius: 24px;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+    screen and (min-resolution: 192dpi) and (min-width: 1200px),
+    screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+    .gallery {
+        background-image: url("/src/images/ice-gallery/desktop/desktop-bg@2x.png");
+    }   
+}
