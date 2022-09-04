@@ -48,7 +48,7 @@
         top: -90px;
     }
 
-    background-image: url(../../images/icon-advantages/cow.png);
+    background-image: url(../images/icon-advantages/cow.png);
     background-size: 36px 36px;
     background-position: center;
 
@@ -81,7 +81,7 @@
         top: -90px;
     }
 
-    background-image: url(../../images-advantages/weight.png);
+    background-image: url(../images/icon-advantages/weight.png);
     background-size: 36px 36px;
     background-position: center;
 
@@ -114,7 +114,7 @@
         top: -90px;
     }
 
-    background-image: url(../../images-advantages/ice-cream.png);
+    background-image: url(../images/icon-advantages/ice-cream.png);
     background-size: 36px 36px;
     background-position: center;
 
@@ -157,6 +157,11 @@
 
     }
 
+    .advantages {
+        padding-top: 86px;
+        padding-bottom: 60px;
+    }
+
 
 }
 
@@ -190,6 +195,11 @@
 
     }
 
+    .advantages {
+        padding-top: 105px;
+        padding-bottom: 204px;
+    }
+
 }
 
 
@@ -201,7 +211,7 @@
     }
 
     .advantages__list {
-        gap: 30px;
+        gap: 32px;
         justify-content: center;
     }
 
@@ -219,6 +229,11 @@
         line-height: 1.75;
         text-align: center;
         letter-spacing: 0.02em;
+    }
+
+    .advantages {
+        padding-top: 120px;
+        padding-bottom: 180px;
     }
 
 }
