@@ -14,18 +14,24 @@
             <div class="about__picture">
 
                 <div class="about__picture--bg">
-                    <img class="about__picture--img"
-                    srcset="
-                ./images/About/cow-278.png 1x,
-                ./images/About/cow-278@2x.png 2x,
-                ./images/About/cow-330.png 1x,
-                ./images/About/cow-330@2x.png 2x,
-                ./images/About/cow-490.png 1x,
-                ./images/About/cow-490@2x.png 2x
-                
-                " 
-                    src="./images/About/cow-278.png" 
-                    alt="cow">
+                   
+                    <picture class="about__picture--img">
+                        
+                        <source media="(min-width: 1200px)" 
+                        srcset="./images/About/cow-490.png 1x,
+                        ./images/About/cow-490@2x.png 2x" />
+                    
+                        <source media="(min-width: 768px)" 
+                        srcset="./images/About/cow-330.png 1x,
+                        ./images/About/cow-330@2x.png 2x" />
+                    
+                        <source media="(max-width: 767px)" 
+                        srcset="./images/About/cow-278.png 1x,
+                        ./images/About/cow-278@2x.png 2x" />
+                    
+                    
+                        <img src="images/About/cow-490.png" alt="cow" >
+                    </picture>
 
                 </div>
 
