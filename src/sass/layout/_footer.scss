@@ -182,12 +182,13 @@ font-size: 12px;
 }
 
 .footer__messenger-icon{
-    fill: #84A178;;
+    fill: #84A178;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer__messenger-icon:hover,
 .footer__messenger-icon:focus{
     fill: #FCFCFC;
-
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
