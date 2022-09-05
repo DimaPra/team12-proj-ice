@@ -1,4 +1,4 @@
-@media screen and (min-width: 320px) {
+
     .product.section {
         padding-top: 60px;
         padding-bottom: 60px;
@@ -57,6 +57,7 @@
         flex-wrap: wrap;
         justify-content: center;
         display: flex;
+        gap: 176px;
     }
 
     .types-item {
@@ -70,7 +71,6 @@
         height: 420px;
         box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
         border-radius: 24px;
-        margin-bottom: 200px;
     }
 
     .types-item.ice-cream::before {
@@ -140,8 +140,6 @@
         border: 0;
         margin: 0 auto;
         padding-bottom: 20px;
-        margin-right: 15px;
-        margin-left: -15px;
     }
 
     .types-item.ice-coffee {
@@ -150,7 +148,6 @@
         height: 420px;
         box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
         border-radius: 24px;
-        margin-bottom: 200px;
     }
 
     .types-item.ice-coffee::before {
@@ -194,7 +191,6 @@
         height: 420px;
         box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
         border-radius: 24px;
-        position: relative;
     }
 
     .types-item.milkshakes::before {
@@ -232,7 +228,6 @@
         border-radius: 150px;
     }
 
-}
 
 @media screen and (min-width: 768px) {
     .product {
@@ -370,7 +365,7 @@
     .types-item__link {
         background-color: rgba(0, 0, 0, 0);
         border: 0;
-        margin: 0 40px 0 -40px;
+        margin: 0 auto;
         padding-bottom: 20px;
     }
 
@@ -550,13 +545,13 @@
         content: '';
         width: 300px;
         height: 300px;
-        background-color: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)),
-            #d9d9d9;
+        background-color: linear-gradient(0deg, rgba(156, 190, 143, 0.7),rgba(156, 190, 143, 0.7)),#d9d9d9;
         box-shadow: 0px 8px 30px rgba(10, 136, 23, 0.25);
-        margin-top: -671px;
+        margin-top: -650px;
         margin-left: auto;
         margin-right: auto;
         border-radius: 150px;
+    
     }
 
     .types-item.ice-coffee {
@@ -590,15 +585,19 @@
 
     .types-item.yellow-bgr-circle::after {
         content: '';
-        width: 300px;
-        height: 300px;
-        background-color: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)),
-            #d9d9d9;
-        box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
-        margin-top: -671px;
-        margin-left: auto;
-        margin-right: auto;
-        border-radius: 150px;
+    width: 300px;
+    height: 300px;
+    background-color: linear-gradient(
+        0deg,
+        rgba(248, 210, 78, 0.7),
+        rgba(248, 210, 78, 0.7)
+      ),
+      #d9d9d9;
+    box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
+    margin-top: -650px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 150px;
     }
 
     .types-item.milkshakes {
@@ -637,37 +636,38 @@
         background-color: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)),
             #d9d9d9;
         box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.25);
-        margin-top: -671px;
+        margin-top: -650px;
         margin-left: auto;
         margin-right: auto;
         border-radius: 150px;
     }
 
     .types__title {
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 30px;
-        line-height: 37px;
-        text-align: center;
-        letter-spacing: 0.04em;
-        text-transform: uppercase;
+            text-align: center;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            margin-top: 32px;
+            font-family: Montserrat;
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 37px;
+            font-family: 'Montserrat';
 
-        color: #000000;
-        margin-top: 32px;
+            color: #000000;
     }
 
-    .types__text {
+    .types-item__text {
         font-family: 'Montserrat';
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
-        line-height: 176%;
+        line-height: 28px;
         text-align: center;
         letter-spacing: 0.04em;
         margin-top: 65px;
         margin-bottom: 60px;
-        color: #000000;
+        color: #131313;
         width: 245px;
         height: 147px;
         margin-left: auto;
