@@ -4,9 +4,14 @@
 }
 
 .slider {
+    position: relative;
     overflow: hidden;
     outline: 1px dotted #000;
     width: 100%;
+    margin-top: -352px;
+
+    margin-left: auto;
+    margin-right: auto;
 
     @media screen and (min-width: 480px) {
         width: 480px;
@@ -19,15 +24,6 @@
     @media screen and (min-width: 1200px) {
         width: 1200px;
     }
-}
-
-.middle {
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    // top: 50%;
-    // left: 50%;
-    // transform: translate(-50%, -50%);
 }
 
 .navigation {
@@ -67,6 +63,7 @@ input[name="r"] {
 }
 
 .slides {
+    // position: absolute;
     width: 400%;
     height: 100%;
     display: flex;
@@ -155,3 +152,5 @@ input[name="r"] {
         margin-bottom: 44px;
     }
 }
+
+
