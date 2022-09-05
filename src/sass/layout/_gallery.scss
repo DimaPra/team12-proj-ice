@@ -1,7 +1,6 @@
 @media screen and (max-width: 767px) {
     .gallery {
         background-image: url("/src/images/ice-gallery/mobile/mobile-bg.png");
-        max-width: 480px;
         
     }
 
@@ -9,7 +8,6 @@
         transform: translateY(-20%);
         left: 20%;
     }
-    
     
 }
 
@@ -26,37 +24,34 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 900px;
+    padding-bottom: 900px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 75px;
-    
 }
 
 .gallery__photos {
     transform: translateY(-20%);      
     width: 100%;
-    /*justify-content: center;*/
+    align-items: center;
     margin-left: auto;
     margin-right: auto;
     border-radius: 7px;
+    display: flex;
+    justify-content: center;
 }
 
 
 @media screen and (min-width: 768px) {
     .gallery {
       background-image: url("/src/images/ice-gallery/tablet/tablet-bg.png");
-      max-width: 768px;
-      margin-bottom: 55px;
-      height: 1075px;
+      
     }
 
     .gallery__photos {
-        transform: translateY(-17%);
-        width: 704px;
+        transform: translateY(-45%);
+        max-width: 704px;
         border-radius: 18px;
         left: 5%;
-        
     }
 }
 
@@ -72,13 +67,11 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) {
 @media screen and (min-width: 1200px) {
     .gallery {
         background-image: url("/src/images/ice-gallery/desktop/desktop-bg.png");
-        max-width: 1200px;
-        height: 1200px;
-        margin-bottom: 123px;
-        
+        max-width: 1920px;
+       
     }
-
-   
+    
+      
     .gallery__photos {
         transform: translateY(-17%);
         left: 17%;
