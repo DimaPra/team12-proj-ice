@@ -170,11 +170,12 @@
           background: #84A178;
           border-radius: 10px;
           padding: 12px 46px;
+          transition: border 250ms;
       }
    // ================================BUTTON HOVER/FOCUS=====================
    &__location:hover{
     background-color: #0A8817;
-    transition: background-color, 250ms;
+    transition: background-color 250ms;
   }
   &__location:focus{
     border: none;
@@ -189,6 +190,7 @@
   border: 2px solid #0A8817;
   color: #FCFCFC;
   fill:#FCFCFC;
+  transition-property: fill,color 250ms;
   }
       &__text{
           font-family: 'Montserrat';
