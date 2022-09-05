@@ -4,9 +4,13 @@
 }
 
 .slider {
+    position: relative;
     overflow: hidden;
-    outline: 1px dotted #000;
     width: 100%;
+    margin-top: -840px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 389px;
 
     @media screen and (min-width: 480px) {
         width: 480px;
@@ -14,20 +18,15 @@
 
     @media screen and (min-width: 768px) {
         width: 768px;
+        margin-bottom: 397px;
+        margin-top: -930px;
     }
 
     @media screen and (min-width: 1200px) {
         width: 1200px;
+        margin-top: -840px;
+        margin-bottom: 207px;
     }
-}
-
-.middle {
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    // top: 50%;
-    // left: 50%;
-    // transform: translate(-50%, -50%);
 }
 
 .navigation {
@@ -67,6 +66,7 @@ input[name="r"] {
 }
 
 .slides {
+    // position: absolute;
     width: 400%;
     height: 100%;
     display: flex;
@@ -155,3 +155,5 @@ input[name="r"] {
         margin-bottom: 44px;
     }
 }
+
+
