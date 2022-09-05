@@ -173,13 +173,16 @@
     background-color: #0A8817;
     
   }
+  &:active{
+    color: #ffffff;
+  }
 
   &::after {
     position: absolute;
-    right: 34px;
+    right: 30px;
     width: 12px;
     height: 12px;
-    top: 15px;
+    top: 16px;
     content: "";
     background-size: contain;
    
