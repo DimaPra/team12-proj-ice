@@ -238,10 +238,12 @@
       &__subtitle{
         font-size: 16px;
         line-height: 1.87;
+        margin-bottom: 32px;
       }
       &__city{
   font-size: 14px;
   line-height: 1.85;
+  margin-bottom: 12px;
   
       }
     &__address{
@@ -266,6 +268,7 @@
     &__work-time{
       font-size: 14px;
       line-height: 1.85;
+      margin-bottom: 12px;
     }
     &__link{
       font-size: 14px;
@@ -321,6 +324,7 @@
   &__city{
     font-size: 16px;
     line-height: 1.87;
+    margin-bottom: 8px;
   }
   &__address{
   
@@ -351,7 +355,7 @@
   }
     }
     .card-container{
-      max-width: 243px;
+      max-width: 288px;
     }
     .card-first{
       max-width: 288px;
