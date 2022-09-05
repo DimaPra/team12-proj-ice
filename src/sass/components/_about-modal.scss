@@ -88,7 +88,6 @@ color: #000;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    
     border-radius: 10px;
     width: 100%;
   
@@ -106,28 +105,29 @@ color: #000;
   }
 
   .about__modal--text{
-    font-family: 'Montserrat';
-font-style: normal;
-font-weight: 400;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
 
 color: #000000;
 text-align: justify;
 margin: 0;
 
 @media screen and (min-width: 320px){
-  font-family: 'Montserrat';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 1.4;
-padding-bottom: 20px;
+ font-family: 'Montserrat';
+ font-style: normal;
+ font-weight: 400;
+ font-size: 14px;
+ line-height: 1.4;
+ padding-bottom: 20px;
 }
+
 @media screen and (min-width: 480px){
   font-size: 16px;
 line-height: 1,37;
 }
 
-  }
+}
 
   
   .about__modal--close {
