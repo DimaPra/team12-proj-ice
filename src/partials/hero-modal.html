@@ -1,0 +1,39 @@
+ <div class="backdrop" data-modal>
+    <div class="modal-hero">
+        <button type="button" class="modal-close-btn" data-modal-close>
+            <svg class="modal-close-icon" width="16" height="16">
+                <use href="./images/symbol-defs.svg#icon-close_40px"></use>
+            </svg>
+        </button>
+
+
+        <div class="products-wrapper">
+        <h2 class="modal-title buy-now-title">Buy now</h2>
+        <div class="product-list-container">
+        <ul class="product-list">
+            <li class="item-product ice-cream-prod green-cirkle">
+                <h3 class="item-product__title">ice cream</h3>
+            </li>
+            <li class="item-product ice-coffee-prod yellow-cirkle">
+                <h3 class="item-product__title">ice coffee</h3>
+            </li>
+            <li class="item-product milkshake-prod brown-cirkle">
+                <h3 class="item-product__title">milkshake</h3>
+            </li>
+        </ul>
+        </div>
+        <form class="buy-now-modal">
+            <span class="modal-form-wrapper">
+                <input type="text" placeholder="Name" name="user_name" required pattern="[a-zA-zа-яА-ЯіІїЇ]+" minlength="2"
+                    class="modal-form-input">
+                <input type="tel" name="user_phone" placeholder="Phone" class="modal-form-input" required
+                    pattern="^[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="xxx-xxx-xx-xx">
+                <textarea name="user-message" class="modal-form-message" placeholder="Comment"></textarea>
+            </span>
+        
+            <button type="submit" class="btn-submit">Submit</button>
+        </form>
+        </div>
+    </div>
+    </div>
+ 
