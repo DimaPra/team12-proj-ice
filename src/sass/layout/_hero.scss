@@ -235,6 +235,19 @@ max-width: 220px;
     color: var(--title-secondary-color);
   } 
 }
+.hero-article__img {
+  margin-left: 33px;
+  color: var(--heading-text-color);
+  cursor: pointer;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (min-width: 1200px) {
+    margin-left: 16px;
+  }
+  &:hover,
+  &:focus {
+    color: var(--title-secondary-color);
+  } 
+}
 .hero-article__svg {
   fill: currentColor;
 }
