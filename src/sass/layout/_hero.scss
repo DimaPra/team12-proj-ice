@@ -235,7 +235,8 @@ max-width: 220px;
     color: var(--title-secondary-color);
   } 
 }
-.hero-article__img {
+.hero-article__svg {
+  display: flex;
   margin-left: 33px;
   color: var(--heading-text-color);
   cursor: pointer;
@@ -248,7 +249,7 @@ max-width: 220px;
     color: var(--title-secondary-color);
   } 
 }
-.hero-article__svg {
+.hero-article__use {
   fill: currentColor;
 }
 .hero--left__group {
