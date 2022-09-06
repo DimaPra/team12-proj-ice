@@ -1,6 +1,6 @@
 @media screen and (max-width: 767px) {
     .gallery {
-        background-image: url("/src/images/ice-gallery/mobile/mobile-bg.png");
+        background-image: url("/src/images/ice-gallery/mobile/mobile-bg.jpg");
         
     }
 
@@ -15,7 +15,7 @@
 screen and (min-resolution: 192dpi) and (max-width: 767px),
 screen and (min-resolution: 2dppx) and (max-width: 767px) {
     .gallery {
-    background-image: url("/src/images/ice-gallery/mobile/mobile-bg@2x.png");
+    background-image: url("/src/images/ice-gallery/mobile/mobile-bg@2x.jpg");
     }
 
 }
@@ -43,7 +43,7 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
 
 @media screen and (min-width: 768px) {
     .gallery {
-      background-image: url("/src/images/ice-gallery/tablet/tablet-bg.png");
+      background-image: url("/src/images/ice-gallery/tablet/tablet-bg.jpg");
       
     }
 
@@ -59,16 +59,15 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
 screen and (min-resolution: 192dpi) and (min-width: 768px),
 screen and (min-resolution: 2dppx) and (min-width: 768px) {
     .gallery {
-        background-image: url("/src/images/ice-gallery/tablet/tablet-bg@2x.png");
+        background-image: url("/src/images/ice-gallery/desktop/desktop-bg.jpg");
     }
 }
 
 
 @media screen and (min-width: 1200px) {
     .gallery {
-        background-image: url("/src/images/ice-gallery/desktop/desktop-bg.png");
-        max-width: 1920px;
-       
+        background-image: url("/src/images/ice-gallery/desktop/desktop-bg.jpg");
+        max-width: 2050px;       
     }
     
       
@@ -88,6 +87,6 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) {
     screen and (min-resolution: 192dpi) and (min-width: 1200px),
     screen and (min-resolution: 2dppx) and (min-width: 1200px) {
     .gallery {
-        background-image: url("/src/images/ice-gallery/desktop/desktop-bg@2x.png");
+        background-image: url("/src/images/ice-gallery/desktop/desktop-bg@2x.jpg");
     }   
 }
