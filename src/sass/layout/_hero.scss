@@ -49,10 +49,11 @@
   }
 }
 }
-
+.hero--right {
+  padding-top: 61px;
+}
 .hero--right__title {
   margin-bottom: 32px;
-  padding-top: 61px;
   max-width: 247px;
   font-family: 'Seymour One';
   font-weight: 400;
@@ -109,6 +110,7 @@
   }
 }
 .hero--right__products {
+  z-index: 10;
   margin-right: 8px;
   @media screen and (min-width: 1200px) {
     margin-right: 32px;
